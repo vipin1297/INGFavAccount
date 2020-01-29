@@ -83,16 +83,7 @@
 		</dependency>
 	</dependencies>
 	
-        <distributionManagement>
-  <snapshotRepository>
-    <id>snapshots</id>
-    <name>Snapshots</name>
-    <url>http://18.216.8.177:8081/nexus/content/repositories/snapshots/</url>
-  </snapshotRepository>
-</distributionManagement>
-
-
-	<build>
+        <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -121,5 +112,12 @@
 			
 		</plugins>
 	</build>
+	<distributionManagement>
+  		<snapshotRepository>
+   		 <id>snapshots</id>
+   		 <name>Snapshots</name>
+   		 <url>http://18.216.8.177:8081/nexus/content/repositories/snapshots/</url>
+  		</snapshotRepository>
+	</distributionManagement>
 
 </project>
